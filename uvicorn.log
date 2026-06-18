@@ -1,0 +1,457 @@
+INFO:     Started server process [23243]
+INFO:     Waiting for application startup.
+2026-06-17 13:54:16,918 INFO tvai: Startup complete (env=development)
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:40118 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40132 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40142 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50464 - "GET /api/v1/auth/me HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50476 - "GET /api/v1/auth/me HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50480 - "POST /api/v1/auth/refresh HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50488 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+2026-06-17 13:57:41,566 WARNING passlib.handlers.bcrypt: (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/home/devraj/My Folder/tradingview-ai-assistant/backend/.venv/lib/python3.14/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+INFO:     127.0.0.1:50494 - "POST /api/v1/auth/login/json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50504 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35910 - "GET /api/v1/dashboard/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35920 - "GET /api/v1/dashboard/summary HTTP/1.1" 200 OK
+2026-06-17 13:57:56,312 ERROR celery.backends.redis: Connection to Redis lost: Retry (0/20) now.
+2026-06-17 13:57:56,313 ERROR celery.backends.redis: Connection to Redis lost: Retry (1/20) in 1.00 second.
+2026-06-17 13:57:57,317 ERROR celery.backends.redis: Connection to Redis lost: Retry (2/20) in 1.00 second.
+2026-06-17 13:57:58,321 ERROR celery.backends.redis: Connection to Redis lost: Retry (3/20) in 1.00 second.
+2026-06-17 13:57:59,324 ERROR celery.backends.redis: Connection to Redis lost: Retry (4/20) in 1.00 second.
+2026-06-17 13:58:00,327 ERROR celery.backends.redis: Connection to Redis lost: Retry (5/20) in 1.00 second.
+2026-06-17 13:58:01,330 ERROR celery.backends.redis: Connection to Redis lost: Retry (6/20) in 1.00 second.
+2026-06-17 13:58:02,333 ERROR celery.backends.redis: Connection to Redis lost: Retry (7/20) in 1.00 second.
+2026-06-17 13:58:03,337 ERROR celery.backends.redis: Connection to Redis lost: Retry (8/20) in 1.00 second.
+2026-06-17 13:58:04,341 ERROR celery.backends.redis: Connection to Redis lost: Retry (9/20) in 1.00 second.
+2026-06-17 13:58:05,345 ERROR celery.backends.redis: Connection to Redis lost: Retry (10/20) in 1.00 second.
+2026-06-17 13:58:06,347 ERROR celery.backends.redis: Connection to Redis lost: Retry (11/20) in 1.00 second.
+2026-06-17 13:58:07,351 ERROR celery.backends.redis: Connection to Redis lost: Retry (12/20) in 1.00 second.
+2026-06-17 13:58:08,353 ERROR celery.backends.redis: Connection to Redis lost: Retry (13/20) in 1.00 second.
+2026-06-17 13:58:09,357 ERROR celery.backends.redis: Connection to Redis lost: Retry (14/20) in 1.00 second.
+2026-06-17 13:58:10,360 ERROR celery.backends.redis: Connection to Redis lost: Retry (15/20) in 1.00 second.
+2026-06-17 13:58:11,364 ERROR celery.backends.redis: Connection to Redis lost: Retry (16/20) in 1.00 second.
+2026-06-17 13:58:12,367 ERROR celery.backends.redis: Connection to Redis lost: Retry (17/20) in 1.00 second.
+2026-06-17 13:58:13,371 ERROR celery.backends.redis: Connection to Redis lost: Retry (18/20) in 1.00 second.
+2026-06-17 13:58:14,374 ERROR celery.backends.redis: Connection to Redis lost: Retry (19/20) in 1.00 second.
+2026-06-17 13:58:15,377 CRITICAL celery.backends.asynchronous: 
+Retry limit exceeded while trying to reconnect to the Celery result store
+backend. The Celery application must be restarted.
+
+2026-06-17 13:58:26,619 WARNING app.playwright.tradingview_scraper: TradingView login flow timed out; continuing anonymously
+2026-06-17 13:58:54,539 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 13:58:57,405 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 13:58:59,966 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 13:59:00,990 INFO httpx: HTTP Request: GET https://news.google.com/rss/search?q=Nifty+50+index+when%3A7d&hl=en-US&gl=US&ceid=US:en "HTTP/1.1 200 OK"
+2026-06-17 13:59:02,934 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 13:59:06,724 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 13:59:15,121 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 13:59:15,296 INFO app.services.analysis: Job 271f89b8-8a68-49f0-a863-c931f16ca398 completed for NSE:NIFTY
+INFO:     127.0.0.1:41646 - "POST /api/v1/analysis/run HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:32962 - "GET /api/v1/analysis/271f89b8-8a68-49f0-a863-c931f16ca398 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32976 - "GET /api/v1/analysis/271f89b8-8a68-49f0-a863-c931f16ca398/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32982 - "GET /api/v1/reports/92643f64-7a8e-4b4d-8e48-81788e857404 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32996 - "GET /api/v1/reports/92643f64-7a8e-4b4d-8e48-81788e857404 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33004 - "GET /api/v1/dashboard/snapshot/271f89b8-8a68-49f0-a863-c931f16ca398/image HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50090 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50096 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50100 - "GET /api/v1/reports/92643f64-7a8e-4b4d-8e48-81788e857404 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50108 - "GET /api/v1/reports/92643f64-7a8e-4b4d-8e48-81788e857404 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:50112 - "POST /api/v1/auth/refresh HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50128 - "GET /api/v1/reports/92643f64-7a8e-4b4d-8e48-81788e857404 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50130 - "GET /api/v1/dashboard/snapshot/271f89b8-8a68-49f0-a863-c931f16ca398/image HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34268 - "GET /api/v1/auth/me HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:34280 - "GET /api/v1/auth/me HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:34292 - "POST /api/v1/auth/refresh HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34296 - "GET /api/v1/auth/me HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:44172 - "POST /api/v1/auth/login/json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44184 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44198 - "GET /api/v1/dashboard/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44204 - "GET /api/v1/dashboard/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44212 - "GET /api/v1/reports/92643f64-7a8e-4b4d-8e48-81788e857404 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44214 - "GET /api/v1/reports/92643f64-7a8e-4b4d-8e48-81788e857404 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44230 - "GET /api/v1/dashboard/snapshot/271f89b8-8a68-49f0-a863-c931f16ca398/image HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57504 - "GET /api/v1/reports/92643f64-7a8e-4b4d-8e48-81788e857404/pdf HTTP/1.1" 200 OK
+2026-06-17 16:00:23,261 ERROR celery.backends.redis: Connection to Redis lost: Retry (0/20) now.
+2026-06-17 16:00:23,262 ERROR celery.backends.redis: Connection to Redis lost: Retry (1/20) in 1.00 second.
+2026-06-17 16:00:24,264 ERROR celery.backends.redis: Connection to Redis lost: Retry (2/20) in 1.00 second.
+2026-06-17 16:00:25,267 ERROR celery.backends.redis: Connection to Redis lost: Retry (3/20) in 1.00 second.
+2026-06-17 16:00:26,271 ERROR celery.backends.redis: Connection to Redis lost: Retry (4/20) in 1.00 second.
+2026-06-17 16:00:27,274 ERROR celery.backends.redis: Connection to Redis lost: Retry (5/20) in 1.00 second.
+2026-06-17 16:00:28,277 ERROR celery.backends.redis: Connection to Redis lost: Retry (6/20) in 1.00 second.
+2026-06-17 16:00:29,280 ERROR celery.backends.redis: Connection to Redis lost: Retry (7/20) in 1.00 second.
+2026-06-17 16:00:30,283 ERROR celery.backends.redis: Connection to Redis lost: Retry (8/20) in 1.00 second.
+2026-06-17 16:00:31,286 ERROR celery.backends.redis: Connection to Redis lost: Retry (9/20) in 1.00 second.
+2026-06-17 16:00:32,289 ERROR celery.backends.redis: Connection to Redis lost: Retry (10/20) in 1.00 second.
+2026-06-17 16:00:33,293 ERROR celery.backends.redis: Connection to Redis lost: Retry (11/20) in 1.00 second.
+2026-06-17 16:00:34,295 ERROR celery.backends.redis: Connection to Redis lost: Retry (12/20) in 1.00 second.
+2026-06-17 16:00:35,299 ERROR celery.backends.redis: Connection to Redis lost: Retry (13/20) in 1.00 second.
+2026-06-17 16:00:36,302 ERROR celery.backends.redis: Connection to Redis lost: Retry (14/20) in 1.00 second.
+2026-06-17 16:00:37,306 ERROR celery.backends.redis: Connection to Redis lost: Retry (15/20) in 1.00 second.
+2026-06-17 16:00:38,308 ERROR celery.backends.redis: Connection to Redis lost: Retry (16/20) in 1.00 second.
+2026-06-17 16:00:39,311 ERROR celery.backends.redis: Connection to Redis lost: Retry (17/20) in 1.00 second.
+2026-06-17 16:00:40,313 ERROR celery.backends.redis: Connection to Redis lost: Retry (18/20) in 1.00 second.
+2026-06-17 16:00:41,317 ERROR celery.backends.redis: Connection to Redis lost: Retry (19/20) in 1.00 second.
+2026-06-17 16:00:42,319 CRITICAL celery.backends.asynchronous: 
+Retry limit exceeded while trying to reconnect to the Celery result store
+backend. The Celery application must be restarted.
+
+2026-06-17 16:00:52,936 WARNING app.playwright.tradingview_scraper: TradingView login flow timed out; continuing anonymously
+2026-06-17 16:01:15,376 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 16:01:18,550 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 16:01:22,238 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 16:01:23,670 INFO httpx: HTTP Request: GET https://news.google.com/rss/search?q=Nifty+50+index+when%3A7d&hl=en-US&gl=US&ceid=US:en "HTTP/1.1 200 OK"
+2026-06-17 16:01:25,923 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 16:01:29,509 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 16:01:36,881 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-17 16:01:36,981 INFO app.services.analysis: Job abc5e23f-66ce-4595-a6b7-bbf857917485 completed for NSE:NIFTY
+INFO:     127.0.0.1:48018 - "POST /api/v1/analysis/run HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56822 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56838 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56848 - "GET /api/v1/reports/ec80d33f-fbcb-4b3a-98a6-dd5948b89109 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56864 - "GET /api/v1/reports/ec80d33f-fbcb-4b3a-98a6-dd5948b89109 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56866 - "GET /api/v1/dashboard/snapshot/abc5e23f-66ce-4595-a6b7-bbf857917485/image HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54930 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54944 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54960 - "GET /api/v1/analysis/271f89b8-8a68-49f0-a863-c931f16ca398/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54970 - "GET /api/v1/analysis/5cbd1899-5df4-4da8-a8f5-c009945884c3/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54976 - "GET /api/v1/analysis/f55d7634-04ed-42d8-8f3e-9b50a60390b9/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54992 - "GET /api/v1/analysis/02f56e0b-bac0-4fc8-ba5b-173467560f37/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54994 - "GET /api/v1/analysis/9586db81-8232-4173-8c93-157ef0661309/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55000 - "GET /api/v1/analysis/95fa711d-a1bc-4181-80be-98a76c2cdbdf/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55004 - "GET /api/v1/analysis/ccbd8f18-bfd8-48cd-88a4-9d7b05a33b4c/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55018 - "GET /api/v1/analysis/e8c21944-6fba-4919-9a38-8e5a506cfd97/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55028 - "GET /api/v1/analysis/48bb6c36-3dd5-4978-a9b8-982360905511/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55052 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55044 - "GET /api/v1/analysis/69b3ada8-6d53-4eb4-bd87-98dbae034317/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55066 - "GET /api/v1/analysis/271f89b8-8a68-49f0-a863-c931f16ca398/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55068 - "GET /api/v1/analysis/5cbd1899-5df4-4da8-a8f5-c009945884c3/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55106 - "GET /api/v1/analysis/95fa711d-a1bc-4181-80be-98a76c2cdbdf/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55086 - "GET /api/v1/analysis/02f56e0b-bac0-4fc8-ba5b-173467560f37/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55094 - "GET /api/v1/analysis/9586db81-8232-4173-8c93-157ef0661309/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55070 - "GET /api/v1/analysis/f55d7634-04ed-42d8-8f3e-9b50a60390b9/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55136 - "GET /api/v1/analysis/e8c21944-6fba-4919-9a38-8e5a506cfd97/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55122 - "GET /api/v1/analysis/ccbd8f18-bfd8-48cd-88a4-9d7b05a33b4c/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55142 - "GET /api/v1/analysis/48bb6c36-3dd5-4978-a9b8-982360905511/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55146 - "GET /api/v1/analysis/69b3ada8-6d53-4eb4-bd87-98dbae034317/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55158 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40900 - "GET /api/v1/watchlist HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40912 - "GET /api/v1/watchlist HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40920 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40926 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40974 - "GET /api/v1/analysis/02f56e0b-bac0-4fc8-ba5b-173467560f37/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40986 - "GET /api/v1/analysis/9586db81-8232-4173-8c93-157ef0661309/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40956 - "GET /api/v1/analysis/5cbd1899-5df4-4da8-a8f5-c009945884c3/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40938 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40944 - "GET /api/v1/analysis/271f89b8-8a68-49f0-a863-c931f16ca398/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40962 - "GET /api/v1/analysis/f55d7634-04ed-42d8-8f3e-9b50a60390b9/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41002 - "GET /api/v1/analysis/48bb6c36-3dd5-4978-a9b8-982360905511/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41008 - "GET /api/v1/analysis/69b3ada8-6d53-4eb4-bd87-98dbae034317/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40992 - "GET /api/v1/analysis/ccbd8f18-bfd8-48cd-88a4-9d7b05a33b4c/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40998 - "GET /api/v1/analysis/e8c21944-6fba-4919-9a38-8e5a506cfd97/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40990 - "GET /api/v1/analysis/95fa711d-a1bc-4181-80be-98a76c2cdbdf/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41012 - "GET /api/v1/analysis/5cbd1899-5df4-4da8-a8f5-c009945884c3/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41016 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41050 - "GET /api/v1/analysis/02f56e0b-bac0-4fc8-ba5b-173467560f37/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41036 - "GET /api/v1/analysis/f55d7634-04ed-42d8-8f3e-9b50a60390b9/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41026 - "GET /api/v1/analysis/271f89b8-8a68-49f0-a863-c931f16ca398/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41068 - "GET /api/v1/analysis/48bb6c36-3dd5-4978-a9b8-982360905511/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41076 - "GET /api/v1/analysis/ccbd8f18-bfd8-48cd-88a4-9d7b05a33b4c/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41052 - "GET /api/v1/analysis/9586db81-8232-4173-8c93-157ef0661309/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41078 - "GET /api/v1/analysis/e8c21944-6fba-4919-9a38-8e5a506cfd97/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41102 - "GET /api/v1/analysis/95fa711d-a1bc-4181-80be-98a76c2cdbdf/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41086 - "GET /api/v1/analysis/69b3ada8-6d53-4eb4-bd87-98dbae034317/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41114 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41120 - "GET /api/v1/reports/ec80d33f-fbcb-4b3a-98a6-dd5948b89109 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41130 - "GET /api/v1/reports/ec80d33f-fbcb-4b3a-98a6-dd5948b89109 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41140 - "GET /api/v1/dashboard/snapshot/abc5e23f-66ce-4595-a6b7-bbf857917485/image HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60320 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60334 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60386 - "GET /api/v1/analysis/f55d7634-04ed-42d8-8f3e-9b50a60390b9/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60356 - "GET /api/v1/analysis/271f89b8-8a68-49f0-a863-c931f16ca398/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60348 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60398 - "GET /api/v1/analysis/9586db81-8232-4173-8c93-157ef0661309/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60388 - "GET /api/v1/analysis/02f56e0b-bac0-4fc8-ba5b-173467560f37/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60372 - "GET /api/v1/analysis/5cbd1899-5df4-4da8-a8f5-c009945884c3/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60424 - "GET /api/v1/analysis/ccbd8f18-bfd8-48cd-88a4-9d7b05a33b4c/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60412 - "GET /api/v1/analysis/95fa711d-a1bc-4181-80be-98a76c2cdbdf/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60456 - "GET /api/v1/analysis/f55d7634-04ed-42d8-8f3e-9b50a60390b9/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60448 - "GET /api/v1/analysis/48bb6c36-3dd5-4978-a9b8-982360905511/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60452 - "GET /api/v1/analysis/69b3ada8-6d53-4eb4-bd87-98dbae034317/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60440 - "GET /api/v1/analysis/e8c21944-6fba-4919-9a38-8e5a506cfd97/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60506 - "GET /api/v1/analysis/95fa711d-a1bc-4181-80be-98a76c2cdbdf/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60484 - "GET /api/v1/analysis/9586db81-8232-4173-8c93-157ef0661309/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60486 - "GET /api/v1/analysis/5cbd1899-5df4-4da8-a8f5-c009945884c3/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60478 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60490 - "GET /api/v1/analysis/02f56e0b-bac0-4fc8-ba5b-173467560f37/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60464 - "GET /api/v1/analysis/271f89b8-8a68-49f0-a863-c931f16ca398/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60510 - "GET /api/v1/analysis/e8c21944-6fba-4919-9a38-8e5a506cfd97/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60526 - "GET /api/v1/analysis/ccbd8f18-bfd8-48cd-88a4-9d7b05a33b4c/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60528 - "GET /api/v1/analysis/48bb6c36-3dd5-4978-a9b8-982360905511/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60536 - "GET /api/v1/analysis/69b3ada8-6d53-4eb4-bd87-98dbae034317/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60542 - "GET /api/v1/reports/c9ad78e0-3c05-459c-a75b-43260d243048 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60548 - "GET /api/v1/reports/c9ad78e0-3c05-459c-a75b-43260d243048 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60556 - "GET /api/v1/dashboard/snapshot/5cbd1899-5df4-4da8-a8f5-c009945884c3/image HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53058 - "GET /api/v1/reports HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53070 - "GET /api/v1/reports HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53078 - "GET /api/v1/reports/ec80d33f-fbcb-4b3a-98a6-dd5948b89109/pdf HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39978 - "GET /api/v1/analysis/history HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:39994 - "GET /api/v1/analysis/history HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:40006 - "POST /api/v1/auth/refresh HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40020 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40076 - "GET /api/v1/analysis/02f56e0b-bac0-4fc8-ba5b-173467560f37/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40052 - "GET /api/v1/analysis/5cbd1899-5df4-4da8-a8f5-c009945884c3/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40036 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40044 - "GET /api/v1/analysis/271f89b8-8a68-49f0-a863-c931f16ca398/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40080 - "GET /api/v1/analysis/9586db81-8232-4173-8c93-157ef0661309/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40062 - "GET /api/v1/analysis/f55d7634-04ed-42d8-8f3e-9b50a60390b9/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40098 - "GET /api/v1/analysis/e8c21944-6fba-4919-9a38-8e5a506cfd97/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40094 - "GET /api/v1/analysis/95fa711d-a1bc-4181-80be-98a76c2cdbdf/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40106 - "GET /api/v1/analysis/48bb6c36-3dd5-4978-a9b8-982360905511/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40096 - "GET /api/v1/analysis/ccbd8f18-bfd8-48cd-88a4-9d7b05a33b4c/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40108 - "GET /api/v1/analysis/69b3ada8-6d53-4eb4-bd87-98dbae034317/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40112 - "GET /api/v1/analysis/5cbd1899-5df4-4da8-a8f5-c009945884c3/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40128 - "GET /api/v1/analysis/02f56e0b-bac0-4fc8-ba5b-173467560f37/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40164 - "GET /api/v1/analysis/9586db81-8232-4173-8c93-157ef0661309/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40134 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40148 - "GET /api/v1/analysis/271f89b8-8a68-49f0-a863-c931f16ca398/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40172 - "GET /api/v1/analysis/f55d7634-04ed-42d8-8f3e-9b50a60390b9/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40178 - "GET /api/v1/analysis/95fa711d-a1bc-4181-80be-98a76c2cdbdf/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40180 - "GET /api/v1/analysis/e8c21944-6fba-4919-9a38-8e5a506cfd97/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40192 - "GET /api/v1/analysis/ccbd8f18-bfd8-48cd-88a4-9d7b05a33b4c/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40206 - "GET /api/v1/analysis/48bb6c36-3dd5-4978-a9b8-982360905511/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40216 - "GET /api/v1/analysis/69b3ada8-6d53-4eb4-bd87-98dbae034317/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37034 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37040 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60566 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60582 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53948 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53960 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59706 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59720 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57144 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57152 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49554 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49556 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36868 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36880 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60298 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60312 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45126 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45134 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42106 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42110 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47940 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47946 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58700 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58714 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54266 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54272 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42998 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43004 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59182 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59184 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55812 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55826 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45598 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45600 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51620 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51628 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44478 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44488 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59448 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59454 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34536 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34550 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57684 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57690 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54952 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54966 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38182 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38188 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56748 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56762 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53548 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53552 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57882 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57894 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54712 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54726 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49600 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49612 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60636 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60640 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58776 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58788 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33254 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33258 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54134 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54136 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34662 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34666 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53970 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53972 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60526 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60536 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48996 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49006 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46676 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46686 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44066 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44076 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44250 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44260 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38200 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38204 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43582 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43588 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42540 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42556 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48060 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48066 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33380 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33382 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34602 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34610 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42912 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42926 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50902 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50914 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51170 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51182 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52870 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52874 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48596 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48606 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46694 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46702 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50462 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50470 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40910 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40914 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60252 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60256 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36948 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36950 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34708 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34714 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44974 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44990 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59122 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59136 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39866 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39882 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44650 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44656 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49786 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49800 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57516 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57532 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54742 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54744 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32964 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32972 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41258 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41270 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41674 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41684 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49644 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49658 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51550 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51566 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34286 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34302 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52768 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52778 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40742 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40752 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40464 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40480 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48554 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48564 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48570 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48578 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48584 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48596 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48598 - "GET /api/v1/analysis/271f89b8-8a68-49f0-a863-c931f16ca398/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48610 - "GET /api/v1/analysis/5cbd1899-5df4-4da8-a8f5-c009945884c3/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48616 - "GET /api/v1/analysis/02f56e0b-bac0-4fc8-ba5b-173467560f37/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48612 - "GET /api/v1/analysis/f55d7634-04ed-42d8-8f3e-9b50a60390b9/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48630 - "GET /api/v1/analysis/9586db81-8232-4173-8c93-157ef0661309/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48688 - "GET /api/v1/analysis/69b3ada8-6d53-4eb4-bd87-98dbae034317/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48650 - "GET /api/v1/analysis/ccbd8f18-bfd8-48cd-88a4-9d7b05a33b4c/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48674 - "GET /api/v1/analysis/48bb6c36-3dd5-4978-a9b8-982360905511/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48658 - "GET /api/v1/analysis/e8c21944-6fba-4919-9a38-8e5a506cfd97/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48634 - "GET /api/v1/analysis/95fa711d-a1bc-4181-80be-98a76c2cdbdf/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48690 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48720 - "GET /api/v1/analysis/02f56e0b-bac0-4fc8-ba5b-173467560f37/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48728 - "GET /api/v1/analysis/9586db81-8232-4173-8c93-157ef0661309/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48722 - "GET /api/v1/analysis/f55d7634-04ed-42d8-8f3e-9b50a60390b9/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48704 - "GET /api/v1/analysis/271f89b8-8a68-49f0-a863-c931f16ca398/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48708 - "GET /api/v1/analysis/5cbd1899-5df4-4da8-a8f5-c009945884c3/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48742 - "POST /api/v1/auth/refresh HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48754 - "GET /api/v1/analysis/69b3ada8-6d53-4eb4-bd87-98dbae034317/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48804 - "GET /api/v1/analysis/95fa711d-a1bc-4181-80be-98a76c2cdbdf/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48788 - "GET /api/v1/analysis/e8c21944-6fba-4919-9a38-8e5a506cfd97/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48760 - "GET /api/v1/analysis/ccbd8f18-bfd8-48cd-88a4-9d7b05a33b4c/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48772 - "GET /api/v1/analysis/48bb6c36-3dd5-4978-a9b8-982360905511/report HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:48808 - "GET /api/v1/analysis/abc5e23f-66ce-4595-a6b7-bbf857917485/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48822 - "POST /api/v1/auth/refresh HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48834 - "GET /api/v1/analysis/e8c21944-6fba-4919-9a38-8e5a506cfd97/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48836 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59158 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59168 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58972 - "GET /api/v1/analysis/history HTTP/1.1" 200 OK
+2026-06-18 11:01:31,484 ERROR celery.backends.redis: Connection to Redis lost: Retry (0/20) now.
+2026-06-18 11:01:31,485 ERROR celery.backends.redis: Connection to Redis lost: Retry (1/20) in 1.00 second.
+2026-06-18 11:01:32,489 ERROR celery.backends.redis: Connection to Redis lost: Retry (2/20) in 1.00 second.
+2026-06-18 11:01:33,493 ERROR celery.backends.redis: Connection to Redis lost: Retry (3/20) in 1.00 second.
+2026-06-18 11:01:34,496 ERROR celery.backends.redis: Connection to Redis lost: Retry (4/20) in 1.00 second.
+2026-06-18 11:01:35,500 ERROR celery.backends.redis: Connection to Redis lost: Retry (5/20) in 1.00 second.
+2026-06-18 11:01:36,503 ERROR celery.backends.redis: Connection to Redis lost: Retry (6/20) in 1.00 second.
+2026-06-18 11:01:37,505 ERROR celery.backends.redis: Connection to Redis lost: Retry (7/20) in 1.00 second.
+2026-06-18 11:01:38,508 ERROR celery.backends.redis: Connection to Redis lost: Retry (8/20) in 1.00 second.
+2026-06-18 11:01:39,510 ERROR celery.backends.redis: Connection to Redis lost: Retry (9/20) in 1.00 second.
+2026-06-18 11:01:40,513 ERROR celery.backends.redis: Connection to Redis lost: Retry (10/20) in 1.00 second.
+2026-06-18 11:01:41,515 ERROR celery.backends.redis: Connection to Redis lost: Retry (11/20) in 1.00 second.
+2026-06-18 11:01:42,519 ERROR celery.backends.redis: Connection to Redis lost: Retry (12/20) in 1.00 second.
+2026-06-18 11:01:43,522 ERROR celery.backends.redis: Connection to Redis lost: Retry (13/20) in 1.00 second.
+2026-06-18 11:01:44,526 ERROR celery.backends.redis: Connection to Redis lost: Retry (14/20) in 1.00 second.
+2026-06-18 11:01:45,530 ERROR celery.backends.redis: Connection to Redis lost: Retry (15/20) in 1.00 second.
+2026-06-18 11:01:46,533 ERROR celery.backends.redis: Connection to Redis lost: Retry (16/20) in 1.00 second.
+2026-06-18 11:01:47,536 ERROR celery.backends.redis: Connection to Redis lost: Retry (17/20) in 1.00 second.
+2026-06-18 11:01:48,539 ERROR celery.backends.redis: Connection to Redis lost: Retry (18/20) in 1.00 second.
+2026-06-18 11:01:49,541 ERROR celery.backends.redis: Connection to Redis lost: Retry (19/20) in 1.00 second.
+2026-06-18 11:01:50,545 CRITICAL celery.backends.asynchronous: 
+Retry limit exceeded while trying to reconnect to the Celery result store
+backend. The Celery application must be restarted.
+
+2026-06-18 11:02:01,695 WARNING app.playwright.tradingview_scraper: TradingView login flow timed out; continuing anonymously
+2026-06-18 11:02:23,884 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 11:02:27,066 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 11:02:29,925 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 11:02:30,951 INFO httpx: HTTP Request: GET https://news.google.com/rss/search?q=Nifty+50+index+when%3A7d&hl=en-US&gl=US&ceid=US:en "HTTP/1.1 200 OK"
+2026-06-18 11:02:33,919 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 11:02:36,173 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 11:02:41,499 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-18 11:02:41,675 INFO app.services.analysis: Job 43f31835-11a7-4d0d-82bc-b4285297437a completed for NSE:NIFTY
+INFO:     127.0.0.1:37496 - "POST /api/v1/analysis/run HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:53726 - "GET /api/v1/analysis/43f31835-11a7-4d0d-82bc-b4285297437a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53728 - "GET /api/v1/analysis/43f31835-11a7-4d0d-82bc-b4285297437a/report HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53742 - "GET /api/v1/reports/5c0d6610-15ab-4ef6-aa6c-519015b95d64 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53752 - "GET /api/v1/reports/5c0d6610-15ab-4ef6-aa6c-519015b95d64 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53760 - "GET /api/v1/dashboard/snapshot/43f31835-11a7-4d0d-82bc-b4285297437a/image HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52522 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52528 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52538 - "GET /api/v1/reports/5c0d6610-15ab-4ef6-aa6c-519015b95d64 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52540 - "GET /api/v1/reports/5c0d6610-15ab-4ef6-aa6c-519015b95d64 HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:52556 - "POST /api/v1/auth/refresh HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52570 - "GET /api/v1/reports/5c0d6610-15ab-4ef6-aa6c-519015b95d64 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52584 - "GET /api/v1/dashboard/snapshot/43f31835-11a7-4d0d-82bc-b4285297437a/image HTTP/1.1" 200 OK
