@@ -28,7 +28,6 @@ class Settings(BaseSettings):
     RATE_LIMIT_PER_MINUTE: int = 60
 
     # Database
-    # DATABASE_URL: str = "postgresql+psycopg://tvai:tvai_password@localhost:5432/tvai"
     DATABASE_URL: str = "postgresql://trade_views_db_user:mn70C4maOIJ5kCiGk8wXFOvUp26R6WE9@dpg-d9ad0fmrnols73a2pim0-a.oregon-postgres.render.com/trade_views_db"
 
     # Redis / Celery
@@ -77,7 +76,6 @@ class Settings(BaseSettings):
         if isinstance(v, str):
             return [o.strip() for o in v.split(",") if o.strip()]
         return v
-
 
 @lru_cache
 def get_settings() -> Settings:
