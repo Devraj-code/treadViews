@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     ENVIRONMENT: str = "development"
     PROJECT_NAME: str = "TradingView AI Assistant"
     API_V1_PREFIX: str = "/api/v1"
-    BACKEND_CORS_ORIGINS: Annotated[List[str], NoDecode] = ["http://localhost:5173", "http://localhost:3000"]
+    BACKEND_CORS_ORIGINS: Annotated[List[str], NoDecode] = ["http://localhost:5173", "http://localhost:3000", "*"]
 
     # Security
     SECRET_KEY: str = "insecure-dev-secret-change-me"
@@ -28,7 +28,8 @@ class Settings(BaseSettings):
     RATE_LIMIT_PER_MINUTE: int = 60
 
     # Database
-    DATABASE_URL: str = "postgresql+psycopg://tvai:tvai_password@localhost:5432/tvai"
+    # DATABASE_URL: str = "postgresql+psycopg://tvai:tvai_password@localhost:5432/tvai"
+    DATABASE_URL: str = "postgresql://trade_views_db_user:mn70C4maOIJ5kCiGk8wXFOvUp26R6WE9@dpg-d9ad0fmrnols73a2pim0-a.oregon-postgres.render.com/trade_views_db"
 
     # Redis / Celery
     REDIS_URL: str = "redis://localhost:6379/0"
